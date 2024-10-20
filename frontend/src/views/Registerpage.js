@@ -1,3 +1,4 @@
+// src/views/Registerpage.js
 import {useState, useContext} from 'react'
 import { Link } from 'react-router-dom'
 import AuthContext from '../context/AuthContext'
@@ -50,7 +51,7 @@ function Registerpage() {
                               style={{ color: "#ff6219" }}
                             />
                             <span className="h2 fw-bold mb-0">
-                              Welcome to <b>Desphixs👋</b>
+                              Welcome to <b>E-Cart👋</b>
                             </span>
                           </div>
                           <h5

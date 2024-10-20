@@ -1,84 +1,120 @@
-import React from 'react'
+// src/views/Homepage.js
+import React from 'react';
 
 function Homepage() {
   return (
     <div>
       <>
-  <main role="madin" style={{ marginTop: 50 }}>
-    {/* Main jumbotron for a primary marketing message or call to action */}
-    <div className="jumbotron">
-      <div className="container">
-        <h1 className="display-3">Hello, world!</h1>
-        <p>
-          This is a template for a simple marketing or informational website. It
-          includes a large callout called a jumbotron and three supporting
-          pieces of content. Use it as a starting point to create something more
-          unique.
-        </p>
-        <p>
-          <a className="btn btn-primary btn-lg" href="#" role="button">
-            Learn more »
-          </a>
-        </p>
-      </div>
-    </div>
-    <div className="container">
-      {/* Example row of columns */}
-      <div className="row">
-        <div className="col-md-4">
-          <h2>Heading</h2>
-          <p>
-            Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-            tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-            fermentum massa justo sit amet risus. Etiam porta sem malesuada
-            magna mollis euismod. Donec sed odio dui.{" "}
-          </p>
-          <p>
-            <a className="btn btn-secondary" href="#" role="button">
-              View details »
-            </a>
-          </p>
-        </div>
-        <div className="col-md-4">
-          <h2>Heading</h2>
-          <p>
-            Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-            tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-            fermentum massa justo sit amet risus. Etiam porta sem malesuada
-            magna mollis euismod. Donec sed odio dui.{" "}
-          </p>
-          <p>
-            <a className="btn btn-secondary" href="#" role="button">
-              View details »
-            </a>
-          </p>
-        </div>
-        <div className="col-md-4">
-          <h2>Heading</h2>
-          <p>
-            Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
-            egestas eget quam. Vestibulum id ligula porta felis euismod semper.
-            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-            nibh, ut fermentum massa justo sit amet risus.
-          </p>
-          <p>
-            <a className="btn btn-secondary" href="#" role="button">
-              View details »
-            </a>
-          </p>
-        </div>
-      </div>
-      <hr />
-    </div>{" "}
-    {/* /container */}
-  </main>
-  <footer className="container">
-    <p>© Company 2017-2018</p>
-  </footer>
-</>
+        <main role="main" style={{ marginTop: 50 }}>
+          {/* Main jumbotron for a primary marketing message or call to action */}
+          <div className="jumbotron text-white bg-dark text-center">
+            <div className="container">
+              <h1 className="display-4">Welcome to Our Website!</h1>
+              <p className="lead">
+                Discover unique content and amazing features designed to inspire and inform.
+              </p>
+              <p>
+                <a className="btn btn-primary btn-lg" href="#" role="button">
+                  Get Started »
+                </a>
+              </p>
+            </div>
+          </div>
 
+          {/* Three columns of text below the jumbotron */}
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-4 col-md-6 mb-4">
+                <div className="card h-100 shadow-sm">
+                  <img
+                    className="card-img-top"
+                    src="https://via.placeholder.com/350x150"
+                    alt="Random content"
+                  />
+                  <div className="card-body">
+                    <h4 className="card-title">Our Mission</h4>
+                    <p className="card-text">
+                      We aim to provide the highest quality services to meet all your needs.
+                      Join us on our journey to make a difference.
+                    </p>
+                  </div>
+                  <div className="card-footer">
+                    <a className="btn btn-secondary" href="#" role="button">
+                      Learn More »
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6 mb-4">
+                <div className="card h-100 shadow-sm">
+                  <img
+                    className="card-img-top"
+                    src="https://via.placeholder.com/350x150"
+                    alt="Innovative features"
+                  />
+                  <div className="card-body">
+                    <h4 className="card-title">Innovative Solutions</h4>
+                    <p className="card-text">
+                      From cutting-edge technology to creative problem solving, we
+                      bring innovation to everything we do.
+                    </p>
+                  </div>
+                  <div className="card-footer">
+                    <a className="btn btn-secondary" href="#" role="button">
+                      Discover »
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6 mb-4">
+                <div className="card h-100 shadow-sm">
+                  <img
+                    className="card-img-top"
+                    src="https://via.placeholder.com/350x150"
+                    alt="Community"
+                  />
+                  <div className="card-body">
+                    <h4 className="card-title">Our Community</h4>
+                    <p className="card-text">
+                      Be a part of a vibrant, thriving community that empowers individuals
+                      to achieve their best.
+                    </p>
+                  </div>
+                  <div className="card-footer">
+                    <a className="btn btn-secondary" href="#" role="button">
+                      Join Us »
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr />
+          </div>
+        </main>
+
+        {/* Footer */}
+        <footer className="bg-light py-3">
+          <div className="container text-center">
+            <p className="mb-0">© Sanofer Niswan 2024 - All Rights Reserved</p>
+            <ul className="list-inline">
+              <li className="list-inline-item">
+                <a href="#">Privacy</a>
+              </li>
+              <li className="list-inline-item">
+                <a href="#">Terms</a>
+              </li>
+              <li className="list-inline-item">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </>
     </div>
-  )
+  );
 }
 
-export default Homepage
+export default Homepage;
